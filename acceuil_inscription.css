@@ -1,0 +1,37 @@
+body{
+	background-color:#ccc;
+}
+h1{
+	color:#0102ff;
+	font-family: calibri;
+}
+#titre{
+	text-align:center;
+	
+}
+.small_titre{
+	font-size:20px;
+}
+#centre{
+	display:block;
+	width:400px;
+	border: 1px solid gray;
+	border-radius:20px;
+	margin-left:40%;
+	margin-right:50%;
+	margin-top:50px;
+}
+#valider{
+	background-color:#00ff70;
+}
+#annuler{
+	background-color:#f00000;
+}
+#connecte{
+	font-size:20px;
+	text-decoration:none;
+	color:blue;
+}
+#conecte{
+	text-align:center;
+}

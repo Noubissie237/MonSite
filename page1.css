@@ -1,0 +1,209 @@
+body{
+	margin:0px;
+	padding:0px;
+	font-size:20px;
+}
+#logo{
+	display:inline-block;
+	border-radius:90px;
+	width:150px;
+	margin-left:50px;
+	margin-top:20px;
+}
+#nom1{ 
+	display:inline-block;
+	margin-left:100px;
+	position:absolute;
+	margin-top:50px;
+} 
+#nom1::first-letter{
+	color:green;
+	font-size:110px;
+}
+#nom2{ 
+	display:inline-block;
+	margin-left:280px;
+	position:absolute;
+	margin-top:50px;
+} 
+#nom2::first-letter{
+	color:green;
+	font-size:110px;
+}
+#logo{
+	font-size:25px;
+}
+span{
+	margin-left:80px;
+	position:absolute;
+	margin-top:180px;
+}
+#arc1{
+	color:red;
+}
+#arc2{
+	color:orange;
+}
+#arc3{
+	color:#1452a1;
+}
+#arc4{
+	color:green;
+}
+#arc5{
+	color:purple;
+}
+#arc6{
+	color:cian;
+}
+#arc7{
+	color:red;
+}
+#arc8{
+	color:green;
+}
+
+#arc9{
+	color:red;
+}
+#arc10{
+	color:orange;
+}
+#arc11{
+	color:#1452a1;
+}
+#arc12{
+	color:green;
+}
+#arc13{
+	color:purple;
+}
+#arc14{
+	color:cian;
+}
+#arc15{
+	color:red;
+}
+#fb, #wh, #tel{
+	width:50px;
+	height:30px;
+	display:block;
+	position:absolute;
+}
+#fb{
+	margin-left:80%;
+	margin-top:-200px;
+}
+#wh{
+	margin-left:85%;
+	margin-top:-205px;
+	height:40px;
+	width:40px;
+}
+#tel{
+	margin-left:90%;
+	margin-top:-200px;
+}
+#contact{
+	margin-left:66%;
+	margin-top:70px;
+	float:right;
+}
+footer{
+	height:80px;
+	padding-top:30px;
+	text-align:center;
+	background-color:#c5c5c5;
+	border-top:2px solid #aaa;
+}
+nav{
+	width:100%;
+	background-color:#424558;
+	position:absolute;
+}
+nav ul{
+	margin:0px;
+	padding:0px;
+}
+nav li{
+	list-style-type:none;
+	float:left;
+}
+nav a{
+	display:inline-block;
+	text-decoration:none;
+	padding:20px 30px;
+	color:#fff;
+	text-transform:uppercase;
+	font-size:15px;
+}
+.table{
+	display:table;
+	margin:0 auto;
+}
+.bio:hover{
+	border-top:5px solid #4c8;
+	background-color:RGBa(64, 200, 130, 0.15);
+}
+.loi:hover{
+	border-top:5px solid #f48;
+	background-color:RGBa(200, 64, 130, 0.15);
+}
+.com:hover{
+	border-top:5px solid yellow;
+	background-color:RGBa(130, 200, 64, 0.15);
+}
+#bio{
+	margin-left:20%;
+	font-size:30px;
+	color:blue;
+}
+#loi{
+	margin-left:20%;
+	font-size:30px;
+	color:blue;
+}
+#musique{
+	margin-left:40px;
+	font-size:20px;
+	color:red;
+}
+#note1{
+	width:500px;
+	margin-left:200px;
+}
+#divmus{
+	background-color:RGBa(250, 10, 130, 0.15);
+	height:550px;
+	padding-left:50px;
+	padding-top:40px;
+	padding-right:50px;
+	margin-top:50px;
+}
+#lefa{
+		display:table;
+		margin:0 auto;
+		float:left;
+		height:200px;
+	}
+#gims{
+		display:table;
+		margin:0 auto;
+		float:left;
+		height:200px;
+
+	}
+#blackm{
+		display:table;
+		margin:0 auto;
+		float:left;
+		height:200px;
+	}
+#sexion{
+		display:table;
+		margin:0 auto;
+		float:left;
+		height:200px;
+	}
+
+

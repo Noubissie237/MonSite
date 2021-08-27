@@ -3,8 +3,13 @@
   include "bd.php"; 
   include "form.php";
   include "auth.php"; 
+  
+				function securisation($donnees){
+					$donnees = preg_match('/[a-z]/', $donnees);
+					return $donnees;
+				}
 
-	if(isset($_POST['pseudo']) && isset($_POST['pass2'])){
+	if((isset($_POST['pseudo'])) && (isset($_POST['pass2']))){
 		$password = sha1($_POST['pass2']);
 		$pseu = $_POST['pseudo'];
 		$nom = $_POST['nom'];
@@ -13,17 +18,14 @@
 		$sex = $_POST['sexe'];
 		$fpass = $_POST['pass1'];
 		$spass = $_POST['pass2'];
-		//if(($pseu != NULL) && ($nom != NULL) && ($pren != NULL) && ($mail != NULL) && ($fpass != NULL) && ($spass != NULL) ){
 		$select = $bd -> prepare("INSERT INTO visiteurs(Id, Pseudo, Email, Sexe, Pass) VALUES(NULL, '$pseu', '$mail', '$sex', SHA1('$pass')) ");
 		$select -> execute();
-		//}
-		$selec = $bd->query("SELECT * FROM visiteurs WHERE Pseudo ='$pseu' AND Pass = '$password' ");
-		if($selec->rowCount() > 0 ){
-			$_SESSION['auth']=$selec->fetch();
-			header('Location:site.html');
+		$select = $bd->query("SELECT * FROM visiteurs WHERE Pseudo ='$pseu' AND Pass = '$password' ");
+		if($select->rowCount() > 0 ){
+			$_SESSION['auth']=$select->fetch();
+			header('Location:page1.php');
 		}
 	}
-	
 ?>
 <!DOCTYPE html>
 <html>
@@ -60,6 +62,7 @@
 						
 			</fieldset>
 		</fieldset>
+		</form>
 	</div>
  <p id= "conecte"><a href = "acceuil_connexion.php" id = "connecte" >Se connecter à un compte existant</a></p>
 	</body>

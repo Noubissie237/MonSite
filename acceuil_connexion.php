@@ -4,12 +4,12 @@
   include "form.php";
   include "auth.php"; 
 
-	if(isset($_POST['pseudo']) && isset($_POST['pass'])){
-		$password = sha1($_POST['pass']);
-		$pseu = $_POST['pseudo'];
-		$select = $bd->query("SELECT * FROM visiteurs WHERE Pseudo = '$pseu' AND Pass = '$password' ");
-		if($select->rowCount() > 0 ){
-			$_SESSION['auth']=$select->fetch();
+	if(isset($_POST['pseudoC']) && isset($_POST['passC'])){
+		$passwordC = sha1($_POST['passC']);
+		$pseuC = $_POST['pseudoC'];
+		$selectC = $bd->query("SELECT * FROM visiteurs WHERE (Pseudo = '$pseuC' AND Pass = '$passwordC') OR (Email = '$pseuC' AND Pass = '$passwordC') ");
+		if($selectC->rowCount() > 0 ){
+			$_SESSION['auth']=$selectC->fetch();
 			header('Location:page1.php');		
 			}
 	}
@@ -29,8 +29,8 @@
 		
 				<fieldset id = "fieldset1">
 					<fieldset>
-						<p>Pseudo: <input type = "text" name = "pseudo" size = "50" /></p>
-						<p>Mot de passe: <input type = "password" name = "pass" size = "50" /></p>
+						<p>Pseudo / Email: <input type = "text" name = "pseudoC" size = "50" required /></p>
+						<p>Mot de passe: <input type = "password" name = "passC" size = "50" required /></p>
 					<br/>
 					<p><input id = "send" type = "submit" name = "valider" value = "Se connecter" />
 					<input id = "nosend" type = "reset" name = "supprimer" value = "Annuler" /></p>

@@ -1,10 +1,16 @@
+<?php
+	$auth = 0;
+  include "bd.php"; 
+  include "form.php";
+  include "auth.php"; 
+?>
 <!DOCTYPE html>
 <html>
 		<head>
 			<title>MON SITE</title>
 			<link rel = "stylesheet" href="page1.css" />
 			<meta charset = "utf-8" /> 
-			<meta name = "viewport" content = "width=device-width, initiale-scale=1.0">
+			<meta name = "viewport" content = "width=device-width, initiale-scale=1.0" />
 		</head>
 	<body>
 		<header>
@@ -31,15 +37,17 @@
 	   </nav>
 	  <p> <blockquote><blockquote>
 		<?php
-			if((date('H') >= 0 ) && (date('H') < 12)){
-				echo "Bonjour et bienvenue à vous dans ma Page Web;";
-			}elseif((date('H')>=12) && (date('H')<18)){
-				echo "Bonne après midi à vous et bienvenue dans ma Page Web;";
-			}elseif((date('H')>=18) && (date('H')<0)){
-				echo "Bonsoir et bienvenue à vous dans ma Page Web;";
-			}
+			echo "<br/><br/><br/>";
+				if((date('H') >= 0 ) && (date('H') < 12)){
+					echo "Bonjour et bienvenue à vous dans ma Page Web; sentez vous libre et surtout n'hésitez pas à me contacter en cas de besoin ou de question(s) !";
+				}elseif((date('H')>=12) && (date('H')<18)){
+					echo "Bonne après midi et bienvenue à vous dans ma Page Web ; sentez nous libre et surtout n'hésitez pas à me contacter en cas de besoin ou de question(s) !";
+				}elseif((date('H')>=18) && (date('H')<0)){
+					echo "Bonsoir et bienvenue à vous dans ma Page Web ; sentez nous libre et surtout n'hésitez pas à me contacter en cas de besoin ou de question(s) !";
+				}
+				
 		?>
-		 sentez nous libre et surtout n'hésitez pas à me contacter en cas de besoin ou de question(s) !
+		 
 		</blockquote></blockquote>
 		</p>
 		

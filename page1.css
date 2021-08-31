@@ -110,7 +110,7 @@ span{
 	float:right;
 }
 footer{
-	height:80px;
+	height:90px;
 	padding-top:30px;
 	text-align:center;
 	background-color:#c5c5c5;
@@ -157,6 +157,15 @@ nav a{
 	margin-left:20%;
 	font-size:30px;
 	color:blue;
+}
+#experience{
+	margin-left:20%;
+	font-size:30px;
+	color:blue;
+}
+.experience:hover{
+	border-top:5px solid #48d;
+	background-color:RGBa(100, 100, 230, 0.15);
 }
 #loi{
 	margin-left:20%;
@@ -205,5 +214,85 @@ nav a{
 		float:left;
 		height:200px;
 	}
-
-
+.lien{
+	text-decoration:none;
+	color:blue;
+}
+#divfilm{
+	background-color:RGBa(130, 200, 64, 0.15);
+	height:570px;
+	padding-left:50px;
+	padding-top:40px;
+	padding-right:50px;
+	margin-top:50px;
+}
+#film{
+	margin-left:40px;
+	font-size:20px;
+	color:red;
+}
+#fast{
+		display:table;
+		margin:0 auto;
+		float:left;
+		height:200px;
+		width:300px;
+}
+#annabelle{
+		display:table;
+		margin:0 auto;
+		float:left;
+		height:200px;
+		width:300px;
+}
+#detour{
+		display:table;
+		margin:0 auto;
+		float:left;
+		height:200px;
+		width:300px;
+}
+#empire{
+		display:table;
+		margin:0 auto;
+		float:left;
+		height:200px;
+		width:300px;
+}
+#game{
+		display:table;
+		margin:0 auto;
+		float:left;
+		height:200px;
+		width:300px;
+}
+#viking{
+		display:table;
+		margin:0 auto;
+		float:left;
+		height:200px;
+		width:300px;
+}
+#power{
+		display:table;
+		margin:0 auto;
+		float:left;
+		height:200px;
+		width:300px;
+}
+#row1{
+	height:70px;
+	text-decoration:underline;
+	font-size:28px;
+	font-style:italic;
+	color:red;
+}
+#coms1, h3{
+	margin-left:80px;
+	border-radius:10px;
+}
+#coms2{
+	margin-left:80px;
+	border-radius:10px;
+	background-color:#2f1
+}

@@ -1,7 +1,6 @@
 <?php
 	$auth = 0;
   include "bd.php"; 
-  include "form.php";
   include "auth.php"; 
 ?>
 <!DOCTYPE html>
@@ -31,7 +30,8 @@
 				<ul>
 					<li class="bio"><a href = "#bio">Biographie</a></li>
 					<li class ="loi"><a href = "#loi">Loisirs</a></li>
-					<li class = "com"><a href = "#">Commentaires</a></li>
+					<li class ="experience"><a href = "#experience">Experience</a></li>
+					<li class = "com"><a href = "#coms">Commentaires</a></li>
 				</ul>
 			</div>
 	   </nav>
@@ -83,7 +83,7 @@
 					</p>
 						<ol>
 							<li id = "musique">La musique</li>
-								<div = id ="divmus">
+								<div id ="divmus">
 									<blockquote>En cequi concerne la musique, je suis un grand passionné de Rap français. l'un des premier artiste Francais m'ayant fait decouvrir le Rap fut <strong>Maitre Gims</strong>, avec
 									son tout premier song solo "J'me tire".</blockquote> Apres lui, j'ai decouvert <strong>Black M</strong>, puis leurs groupe de musique la <strong>Sexion D'assaut</strong>, et dans la Sexion d'assaut,
 									j'ai decouvert mon aritste préféré jusqu'à présent qui est <strong>Lefa</strong>.<br/>
@@ -92,11 +92,58 @@
 									il s'agit donc dans la pluspart du temps soit de Gims, soit de Black M, soit de la sexion, soit de Lefa !<br> Voila quelques images les representants :
 									<br/><img src = "lefa.jpg" id="lefa"><img src = "gims.jpg" id="gims"><img src = "blackm.jpg" id="blackm"><img src = "sexion.jpg" id="sexion">
 								</div>
-						</ol>
-				
+							<br/><br/>	
+							<li id = "film">Les films/séries</li>
+								<div id = "divfilm">
+									<blockquote>Personnellement, les films d'actions (tel que <a class ="lien" href ="https://www.youtube.com/watch?v=Eumj0-UxrQM">Fast & Furious</a>), d'horreurs(tel que <a class ="lien" href ="https://www.youtube.com/watch?v=EfUDfcotcxE">Annabelle</a>) et carnibales(tel que <a class ="lien" href ="https://www.youtube.com/watch?v=rlYuLS97G0Y">Detour Mortel</a>) sont mes préférés.</blockquote> De ce faite, je suis un grand abonné à Canal Olympia,
+									j'y vais au moins 03 fois par mois pour y voir des films. Si vous êtes intéréssé également par des films, vous pouvez consulter le programme de la semaine en cliquant <a class = "lien" href = "https://www.icicine.cm/canal-olympia-cinema-yaounde-1-programme-de-la-semaine-2021/">ici</a>.
+									En cequi concerne mon style de séries, je suis le plus attirés par les séries représentant l'ancien temps, comme par exemple <a class = "lien" href ="https://www.youtube.com/watch?v=PPOB5HHXKGc">Game Of Thrones</a>, <a href ="https://www.youtube.com/watch?v=mAl60ykBm4A" class ="lien">Viking</a> etc...
+									Toutes fois, j'aime bien aussi les séries Américaines tel que <a class ="lien"href = "https://fr.wikipedia.org/wiki/Empire_(s%C3%A9rie_t%C3%A9l%C3%A9vis%C3%A9e,_2015)">Empire</a> ou encore <a class ="lien" href ="https://fr.wikipedia.org/wiki/Power_(s%C3%A9rie_t%C3%A9l%C3%A9vis%C3%A9e)">Power</a> où, l'acteur principale commence pauvre, grandit dans le queens
+									puis deviens riches et ont beaucoup de mal à garder leurs positions sociales.<br/>
+									Voici donc ci dessous quelques images de films et series précédemment cités:<br/>
+									<img src = "fast.jpg" id ="fast"><img src = "annabelle.jpg" id ="annabelle"><img src = "detour.jpg" id ="detour"><img src = "game.jpg" id ="game"><img src = "viking.jpg" id ="viking"><img src = "empire.jpg" id ="empire"><img src = "power.jpg" id ="power">
+								</div>
+						</ol><br/><br/><br/>	
+				<li id = "experience">Experience</li>
+				<p>
+					A ce jour (<?php echo date('d/m/Y')?>), j'ai pas une très grande experience en informatique. A cet effait je n'ai en tête que quelques langage de programmation, en outre <strong> HTML CSS</strong>, le <strong>Java Script</strong> le <strong>Langage C</strong>, le <strong>Python</strong>, le <strong>PHP</strong>
+					
+					<table border = "0" width = "90%">
+						<tr id = "row1">
+							<th>Langages</th>
+							<th>Niveau</th>
+						</tr>
+						<tr>
+							<td align = "center">HTML CSS</td>
+							<td align = "center"> Avancé</td>
+						</tr>
+						<tr>
+							<td align = "center">Java Script</td>
+							<td align = "center"> Avancé</td>
+						</tr>
+						<tr>
+							<td align = "center">Langage C</td>
+							<td align = "center"> Avancé</td>
+						</tr>
+						<tr>
+							<td align = "center">Python</td>
+							<td align = "center">Amateur</td>
+						</tr>
+						<tr>
+							<td align = "center">PHP</td>
+							<td align = "center">Amateur</td>
+						</tr>
+					</table>
+				</p>
 			</ul>
 		</p>
-
+		<br/><br/>
+			<form action ="mailto:noubissiekamgawifried2017@gmail.com" method = "POST" >
+				<h3>Commentaires</h3>
+					<textarea name = "commentaire" rows ="8" cols = "40" id = "coms1" placeholder = "Laissez moi un commentaire !"></textarea><br/><br/>
+					<input type = "submit" name = "envoyer" value = "Envoyer" id = "coms2" />
+			</form>
+<br/><br/><br/>
 	   <footer>
 			<p>Email: noubissiekamgawifried2017@gmail.com</p>
 			<p>Contact: +237 690 232 120</p>

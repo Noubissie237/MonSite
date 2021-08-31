@@ -1,7 +1,6 @@
 <?php 
 	$auth = 0;
   include "bd.php"; 
-  include "form.php";
   include "auth.php"; 
   
 				function securisationEmail($mailC){

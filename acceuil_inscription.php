@@ -1,42 +1,71 @@
 <?php 
 	$auth = 0;
-  include "bd.php"; 
-  include "auth.php"; 
+	include "bd.php"; 
+	include "auth.php"; 
   
 				function securisationEmail($mailC){
 					$mailC = filter_var($mailC, FILTER_VALIDATE_EMAIL);
 					$mailC = filter_var($mailC, FILTER_SANITIZE_EMAIL);
 					return $mailC;
 				}
-			
 				
-							
+				function securisationPass($pass){
+					if(strlen($pass) < 8){
+						echo 'Le mot de pass doit contenir au moins 8 caracteres<br/>';					}
+					else{
+						return $pass;
+					}
+				}
+				
+				function securisationName($name){
+					$name = htmlspecialchars($name);
+					$name = trim($name);
+					$name = stripslashes($name);
+					$name = strip_tags($name);
+					return $name;
+				}
 
 	if(isset($_POST['pseudo'])){
 		$password = sha1($_POST['pass2']);
-		$pseu = ($_POST['pseudo']);
-		$nom = ($_POST['nom']);
-		$pren = ($_POST['prenom']);
-		$mailbrute = $_POST['email'];
-		$mail = securisationEmail($mailbrute);
-		$sex = $_POST['sexe'];
-		$fpass = $_POST['pass1'];
-		$spass = $_POST['pass2'];
-		
-		if($fpass == $spass){
-			
-		$select = $bd -> prepare("INSERT INTO visiteurs(Id, Pseudo, Nom, Prenom, Sexe, Email, Pass) VALUES(NULL, '$pseu', '$nom', '$pren', '$sex', '$mail', SHA1('$spass')) ");
-		$select -> execute();
-		$select = $bd->query("SELECT * FROM visiteurs WHERE Pseudo ='$pseu' AND Pass = '$password' ");
-		if($select->rowCount() > 0 ){
-			$_SESSION['auth']=$select->fetch();
-			header('Location:page1.php');
+		$pseudobrute = ($_POST['pseudo']);
+		$pseu = securisationName($pseudobrute);
+		$nombrute = ($_POST['nom']);
+		$nom = securisationName($nombrute);
+		$prenombrute = ($_POST['prenom']);
+		$pren = securisationName($prenombrute);
+		$mailbrute = $_POST['email'];	
+		$mail = securisationEmail($mailbrute);		
+		if($mail == NULL){
+			echo 'Adresse e-mail incorrecte<br/>';
 		}
-	}else{
-		echo "Les mots de passes ne correspondent pas !<br/>";
-		header('acceuil_inscription.php');
+		else{
+			$sex = $_POST['sexe'];
+			$passbrute1 = $_POST['pass1'];
+			$fpass = securisationPass($passbrute1);
+			$passbrute2 = $_POST['pass2'];
+			$spass = securisationPass($passbrute2);
+			
+				if($fpass != $spass){
+					echo 'Les mots de passes ne correspondent pas';
+				}
+				else{
+					$select = $bd -> query("SELECT * FROM visiteurs WHERE Pseudo = '$pseu' ");
+					if($select -> rowCount() > 0){
+						echo 'Ce pseudo existe déjà !<br/>';
+					}else{
+						$select = $bd -> prepare("INSERT INTO visiteurs(Id, Pseudo, Nom, Prenom, Sexe, Email, Pass) VALUES(NULL, '$pseu', '$nom', '$pren', '$sex', '$mail', SHA1('$spass')) ");
+						$select -> execute();
+						$select = $bd->query("SELECT * FROM visiteurs WHERE Pseudo ='$pseu' AND Pass = '$password' ");
+							if($select->rowCount() > 0 ){
+								$_SESSION['auth']=$select->fetch();
+								header('Location:page1.php');
+							}
+	header('acceuil_inscription.php');
+					}
+				}
+		}
 	}
-	}
+	
 ?>
 <!DOCTYPE html>
 <html>

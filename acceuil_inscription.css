@@ -35,3 +35,7 @@ h1{
 #conecte{
 	text-align:center;
 }
+#mailError{
+	text-align:center;
+	color:red;
+}

@@ -22,20 +22,20 @@
 			<link rel = "stylesheet" href = "acceuil_connexion.css" />
 		</head>
 	<body>
-		<h1>Connexion</h1>
-		<p id = "first">Utilisez votre compte de visiteur</p><br/>
+		<h1 class = "bleu">Connexion</h1>
+		<p id = "bleu">Utilisez votre compte de visiteur</p><br/>
 			<form action = "#" method = "POST" >
 		
 				<fieldset id = "fieldset1">
 					<fieldset>
-						<p>Pseudo / Email: <input type = "text" name = "pseudoC" size = "50" required /></p>
-						<p>Mot de passe: <input type = "password" name = "passC" size = "50" required /></p>
+						<p>Pseudo / Email: <input type = "text" name = "pseudoC" size = "80" required /></p>
+						<p>Mot de passe: <input type = "password" name = "passC" size = "80" required /></p>
 					<br/>
 					<p><input id = "send" type = "submit" name = "valider" value = "Se connecter" />
 					<input id = "nosend" type = "reset" name = "supprimer" value = "Annuler" /></p>
 					</fieldset>
 				</fieldset>
-				<p><a href = "acceuil_inscription.php" id="last" >Créer un nouveau compte</a></p>
+				<p class = 'bleu'><a href = "acceuil_inscription.php" >Créer un nouveau compte</a></p>
 		
 			</form>
 		

@@ -9,7 +9,7 @@
 			<title>MON SITE</title>
 			<link rel = "stylesheet" href="page1.css" />
 			<meta charset = "utf-8" /> 
-			<meta name = "viewport" content = "width=device-width, initiale-scale=1.0" />
+			<meta name = "viewport" content = "width-device-width, initial-scale=1" />
 		</head>
 	<body>
 		<header>
@@ -17,7 +17,7 @@
 				<img src = "logo.jpg" alt = "logo" id="logo" />
 				<a href = "http://facebook.com"><img src ="facebook.png" id ="fb" /></a>
 				<a href = "http://alexmods.com/down/gbwhatsapp-pro."><img src ="whatsapp.png" id ="wh" /></a>
-				<a href = "237690232120"><img src ="telephone.png" id ="tel" /></a>
+				<a href = "contact.php"><img src ="telephone.png" id ="tel" /></a>
 				<div id = "nom1">N<spam id="arc1">o</spam><spam id="arc2">u</spam><spam id="arc3">b</spam><spam id="arc4">i</spam><spam id="arc5">s</spam><spam id="arc6">s</spam><spam id="arc7">i</spam><spam id="arc8">e</spam></div>
 				<div id = "nom2">W<spam id="arc9">i</spam><spam id="arc10">l</spam><spam id="arc11">f</spam><spam id="arc12">r</spam><spam id="arc13">i</spam><spam id="arc14">e</spam><spam id="arc15">d</spam></div>
 				<span>noubissiekamgawilfried2017@gmail.com</span>
@@ -31,12 +31,13 @@
 					<li class="bio"><a href = "#bio">Biographie</a></li>
 					<li class ="loi"><a href = "#loi">Loisirs</a></li>
 					<li class ="experience"><a href = "#experience">Experience</a></li>
-					<li class = "com"><a href = "#coms">Commentaires</a></li>
+					<li class = "com"><a href = "#coms1">Commentaires</a></li>
 				</ul>
 			</div>
 	   </nav>
 	  <p> <blockquote><blockquote>
 		<?php
+		include 'bd.php';
 			echo "<br/><br/><br/>";
 				if((date('H') >= 0 ) && (date('H') < 12)){
 					echo "Bonjour et bienvenue à vous dans ma Page Web; sentez vous libre et surtout n'hésitez pas à me contacter en cas de besoin ou de question(s) !";

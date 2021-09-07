@@ -74,7 +74,7 @@
 		<head>
 			<title>Inscription</title>
 			<meta charset = "utf-8" />
-			<link rel = "stylesheet" href = "acceuil_inscription.css" />
+			<link rel = "stylesheet" href = "acceuil_inscription_nbPass.css" />
 		</head>
 	<body>
 	
@@ -90,9 +90,9 @@
 					<p>Email<span> *</span><br/>
 						<input type = "email" required name = "email" class = "input" placeholder = "	Votremail@gmail.com" class = "input" pattern = "^(.*)gmail.com$" /></p>
 					<p>Mot de passe<span> *</span><br/>
-						<input type = "password" required name= "pass1" class = "input"  class = "input" /></p>
+						<input type = "password" required name= "pass1" class = "input"  class = "input" /><br/><span>Au moins 4 caractères sont requis</span></p>
 					<p>Confirmer<span> *</span><br/>
-						<input type = "password" name = "pass2" placeholder = "	Retapez le mot de passe" class = "input" required /></p>
+						<input type = "password" name = "pass2" placeholder = "	Retapez le mot de passe" class = "input" required /><br/></p>
 					<p>Sexe:<span> *</span>
 						M <input type = "radio" required name = "sexe" class = "inputin" value = "MASCULIN" />
 						F <input type = "radio" required name = "sexe" class = "inputin" value = "FEMININ" /></p>

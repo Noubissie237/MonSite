@@ -74,7 +74,7 @@
 		<head>
 			<title>Inscription</title>
 			<meta charset = "utf-8" />
-			<link rel = "stylesheet" href = "acceuil_inscription.css" />
+			<link rel = "stylesheet" href = "acceuil_inscription_pseudo.css" />
 		</head>
 	<body>
 	
@@ -82,7 +82,8 @@
 			<form action = "#" method = "POST" id="myform">
 			<h1>Creer votre compte de visiteurs</h1>
 					<p>Pseudo<span> *</span><br/>
-						<input type = "text" required name = "pseudo" class = "input" placeholder = "	Entrer le pseudo" class = "input" /></p>
+						<input type = "text" required name = "pseudo" class = "input" placeholder = "	Entrer le pseudo" class = "input" /><br/>
+					<span>Ce pseudo existe déjà !</span></p>
 					<p>Nom<span> *</span><br/>
 						<input type = "text" required name = "nom" class = "input nom" placeholder = "	Entrer le nom" class = "input"/></p>
 					<p>	Prénom<span> *</span><br/>

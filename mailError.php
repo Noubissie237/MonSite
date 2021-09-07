@@ -74,7 +74,7 @@
 		<head>
 			<title>Inscription</title>
 			<meta charset = "utf-8" />
-			<link rel = "stylesheet" href = "acceuil_inscription.css" />
+			<link rel = "stylesheet" href = "mailError.css" />
 		</head>
 	<body>
 	
@@ -88,7 +88,8 @@
 					<p>	Prénom<span> *</span><br/>
 						<input type = "text" required name = "prenom" class = "input prenom" placeholder = "	Entrer le prénom" class = "input" /></p>
 					<p>Email<span> *</span><br/>
-						<input type = "email" required name = "email" class = "input" placeholder = "	Votremail@gmail.com" class = "input" pattern = "^(.*)gmail.com$" /></p>
+						<input type = "email" required name = "email" class = "input" placeholder = "	Votremail@gmail.com" class = "input" pattern = "^(.*)gmail.com$" /><br/>
+						<span>Adresse mail incorrecte !<span></p>
 					<p>Mot de passe<span> *</span><br/>
 						<input type = "password" required name= "pass1" class = "input"  class = "input" /></p>
 					<p>Confirmer<span> *</span><br/>

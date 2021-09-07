@@ -7,3 +7,23 @@
 #mtn{
 	color:RGBa(250, 230, 10, 1);
 }
+body{
+	background-color:white;
+	animation-name: jeu;
+	animation-duration:60s;
+	animation-timing-function:ease; /* joue un role sur la progression: rapide au debut, accelère au milieu et ralenti a la fin*/
+	animation-iteration-count:infinite;
+}
+@keyframes jeu{
+	0%{background-color:white;}
+	10%{background-color:green;}
+	20%{background-color:red;}
+	30%{background-color:yellow;}
+	40%{background-color:blue;}
+	50%{background-color:gray;}
+	60%{background-color:pink;}
+	70%{background-color:RGB(32, 40, 90);}
+	80%{background-color:orange;}
+	90%{background-color:purple;}
+	100%{background-color:red;}
+}

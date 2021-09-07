@@ -84,7 +84,7 @@ span{
 #arc15{
 	color:red;
 }
-#fb, #wh, #tel{
+#fb, #wh, #tel,#dec{
 	width:50px;
 	height:30px;
 	display:block;
@@ -99,6 +99,15 @@ span{
 	margin-top:-205px;
 	height:40px;
 	width:40px;
+}
+#dec{
+	margin-left:95%;
+	margin-top:-200px;
+	width:40px;
+	height:35px;	
+}
+#dec:hover{
+	background-color:black;
 }
 #tel{
 	margin-left:90%;

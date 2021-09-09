@@ -190,6 +190,31 @@ nav a{
 	width:500px;
 	margin-left:200px;
 }
+.lien{
+	text-decoration:none;
+	color:blue;
+}
+#row1{
+	height:70px;
+	text-decoration:underline;
+	font-size:28px;
+	font-style:italic;
+	color:red;
+}
+#coms1, h3{
+	margin-left:80px;
+	border-radius:10px;
+}
+#coms2{
+	margin-left:80px;
+	border-radius:10px;
+	background-color:#2f1
+}
+
+
+
+
+@media screen and (min-width: 1280px){
 #divmus{
 	background-color:RGBa(250, 10, 130, 0.15);
 	height:550px;
@@ -223,10 +248,8 @@ nav a{
 		float:left;
 		height:200px;
 	}
-.lien{
-	text-decoration:none;
-	color:blue;
-}
+	
+	
 #divfilm{
 	background-color:RGBa(130, 200, 64, 0.15);
 	height:570px;
@@ -234,11 +257,6 @@ nav a{
 	padding-top:40px;
 	padding-right:50px;
 	margin-top:50px;
-}
-#film{
-	margin-left:40px;
-	font-size:20px;
-	color:red;
 }
 #fast{
 		display:table;
@@ -289,19 +307,102 @@ nav a{
 		height:200px;
 		width:300px;
 }
-#row1{
-	height:70px;
-	text-decoration:underline;
-	font-size:28px;
-	font-style:italic;
-	color:red;
 }
-#coms1, h3{
-	margin-left:80px;
-	border-radius:10px;
+
+
+
+@media screen and (min-width: 681px) and (max-width: 1279px){
+#divmus{
+	background-color:RGBa(250, 10, 130, 0.15);
+	height:550px;
+	padding-left:50px;
+	padding-top:40px;
+	padding-right:50px;
+	margin-top:50px;
 }
-#coms2{
-	margin-left:80px;
-	border-radius:10px;
-	background-color:#2f1
+#lefa{
+		display:table;
+		margin:0 auto;
+		float:left;
+		height:24%;
+	}
+#gims{
+		display:table;
+		margin:0 auto;
+		float:left;
+		height:24%;
+
+	}
+#blackm{
+		display:table;
+		margin:0 auto;
+		float:left;
+		height:24%;
+		width:25%;
+	}
+#sexion{
+		display:table;
+		margin:0 auto;
+		float:left;
+		height:24%;
+	}
+	
+	
+#divfilm{
+	background-color:RGBa(130, 200, 64, 0.15);
+	height:570px;
+	padding-left:50px;
+	padding-top:40px;
+	padding-right:50px;
+	margin-top:50px;
+}
+#fast{
+		display:table;
+		margin:0 auto;
+		float:left;
+		height:20%;
+		width:20%;
+}
+#annabelle{
+		display:table;
+		margin:0 auto;
+		float:left;
+		height:20%;
+		width:20%;
+}
+#detour{
+		display:table;
+		margin:0 auto;
+		float:left;
+		height:20%;
+		width:20%;
+}
+#empire{
+		display:table;
+		margin:0 auto;
+		float:left;
+		height:20%;
+		width:20%;
+}
+	#game{
+		display:table;
+		margin:0 auto;
+		float:left;
+		height:20%;
+		width:20%;
+}
+#viking{
+		display:table;
+		margin:0 auto;
+		float:left;
+		height:20%;
+		width:20%;
+}
+#power{
+		display:table;
+		margin:0 auto;
+		float:left;
+		height:20%;
+		width:20%;
+}
 }

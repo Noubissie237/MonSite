@@ -1,6 +1,23 @@
 body{
 	background-color:RGBa(32, 40, 90, 0.7);
+	/* animation-name: jeu; */
+	/* animation-duration:900s; */
+	/* animation-timing-function:ease; */
+	/* animation-iteration-count:infinite; */
 }
+/* @keyframes jeu{ */
+	/* 0%{background-color:RGBa(32, 40, 90, 0.7);} */
+	/* 10%{background-color:green;} */
+	/* 20%{background-color:red;} */
+	/* 30%{background-color:yellow;} */
+	/* 40%{background-color:blue;} */
+	/* 50%{background-color:gray;} */
+	/* 60%{background-color:pink;} */
+	/* 70%{background-color:RGB(32, 40, 90);} */
+	/* 80%{background-color:orange;} */
+	/* 90%{background-color:purple;} */
+	/* 100%{background-color:red;} */
+/* } */
 div{
 	background-color:RGB(32, 40, 90);
 	display:block;

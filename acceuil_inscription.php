@@ -82,17 +82,17 @@
 			<form action = "#" method = "POST" id="myform">
 			<h1>Creer votre compte de visiteurs</h1>
 					<p>Pseudo<span> *</span><br/>
-						<input type = "text" required name = "pseudo" class = "input" placeholder = "	Entrer le pseudo" class = "input" /></p>
+						<input type = "text" required name = "pseudo" class = "input" placeholder = "	Entrer le pseudo" class = "input" value = "<?php if(isset($_POST['pseudo'])){ echo $_POST['pseudo']; } ?>" /></p>
 					<p>Nom<span> *</span><br/>
-						<input type = "text" required name = "nom" class = "input nom" placeholder = "	Entrer le nom" class = "input"/></p>
+						<input type = "text" required name = "nom" class = "input nom" placeholder = "	Entrer le nom" class = "input"value = "<?php if(isset($_POST['nom'])){ echo $_POST['nom']; } ?>"/></p>
 					<p>	Prénom<span> *</span><br/>
-						<input type = "text" required name = "prenom" class = "input prenom" placeholder = "	Entrer le prénom" class = "input" /></p>
+						<input type = "text" required name = "prenom" class = "input prenom" placeholder = "	Entrer le prénom" class = "input" value = "<?php if(isset($_POST['prenom'])){ echo $_POST['prenom']; } ?>" /></p>
 					<p>Email<span> *</span><br/>
-						<input type = "email" required name = "email" class = "input" placeholder = "	Votremail@gmail.com" class = "input" pattern = "^(.*)gmail.com$" /></p>
+						<input type = "email" required name = "email" class = "input" placeholder = "	Votremail@gmail.com" class = "input" pattern = "^(.*)gmail.com$" value = "<?php if(isset($_POST['email'])){ echo $_POST['email']; } ?>"/></p>
 					<p>Mot de passe<span> *</span><br/>
 						<input type = "password" required name= "pass1" class = "input"  class = "input" /></p>
 					<p>Confirmer<span> *</span><br/>
-						<input type = "password" name = "pass2" placeholder = "	Retapez le mot de passe" class = "input" required /></p>
+						<input type = "password" name = "pass2" placeholder = "	Retaper le mot de passe" class = "input" required /></p>
 					<p>Sexe:<span> *</span>
 						M <input type = "radio" required name = "sexe" class = "inputin" value = "MASCULIN" />
 						F <input type = "radio" required name = "sexe" class = "inputin" value = "FEMININ" /></p>

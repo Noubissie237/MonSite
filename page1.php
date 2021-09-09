@@ -1,7 +1,8 @@
 <?php
 	$auth = 0;
   include "bd.php"; 
-  include "auth.php"; 
+  include "auth.php";
+  // include 'session.php'
 	
 ?>
 <!DOCTYPE html>
@@ -10,15 +11,15 @@
 			<title>MON SITE</title>
 			<link rel = "stylesheet" href="page1.css" />
 			<meta charset = "utf-8" /> 
-			<!--<meta http-equiv="refresh" content="5; url=acceuil_connexion.php"><!-- ferme automatiquement le site apres le temps donnée en seconde-->
+			<meta http-equiv="REFRESH" content="300; url=index.php"><!-- ferme automatiquement le site apres le temps donnée en seconde-->
 			<meta name = "viewport" content = "width-device-width, initial-scale=1" />
 		</head>
 	<body>
 		<header>
 			<div id = "logo">
 				<img src = "logo.jpg" alt = "logo" id="logo" />
-				<a href = "http://facebook.com"><img src ="facebook.png" id ="fb" /></a>
-				<a href = "http://alexmods.com/down/gbwhatsapp-pro."><img src ="whatsapp.png" id ="wh" /></a>
+			<!--	<a href = "http://facebook.com"><img src ="facebook.png" id ="fb" /></a>-->
+				<a href = "wa.me/+237690232120"><img src ="whatsapp.png" id ="wh" /></a>
 				<a href = "contact.php"><img src ="telephone.png" id ="tel" /></a>
 				<a href = "deconnexion.php"><img src = "deconnexion.png" id = "dec" alt = "deconnexion"/> </a>
 				<div id = "nom1">N<spam id="arc1">o</spam><spam id="arc2">u</spam><spam id="arc3">b</spam><spam id="arc4">i</spam><spam id="arc5">s</spam><spam id="arc6">s</spam><spam id="arc7">i</spam><spam id="arc8">e</spam></div>

@@ -10,19 +10,16 @@
 		if($selectC->rowCount() > 0 ){
 			$_SESSION['auth']=$selectC->fetch();
 			header('Location:page1.php');		
-			// }else{
-				// header('Location:index1.php');
-				// die();
-			// }
+			}
 	}
-	}
+	
 ?>
 <!DOCTYPE html>
 <html>
 		<head>	
 			<title>CONNEXION</title>
 			<meta charset = "utf-8" />
-			<link rel = "stylesheet" href = "index.css" />
+			<link rel = "stylesheet" href = "index1.css" />
 		</head>
 	<body>
 			<form action = "#" method = "POST" >
@@ -32,8 +29,8 @@
 				
 					
 						<p><strong>Pseudo / Email</strong><br/><br/> <input type = "text" name = "pseudoC" placeholder = "	Entrer le pseudo" class = "input"  required value = "<?php if(isset($_POST['pseudoC'])){ echo $_POST['pseudoC']; } ?>" /></p>
-						<p><strong>Mot de passe</strong> <br/><br/><input type = "password" name = "passC" placeholder = "	Entrer le mot de passe" class = "input" required /></p>
-	
+						<p><strong>Mot de passe</strong> <br/><br/><input type = "password" name = "passC" placeholder = "	Entrer le mot de passe" class = "input" required /></br>
+						<span>Mot de passe incorrect</span>
 					<p><input class = "input sub" type = "submit" name = "valider" value = "Se connecter" />
 			
 				</div>
